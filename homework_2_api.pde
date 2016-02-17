@@ -1,13 +1,15 @@
 
 JSONObject json;
+
+
 float wind_degrees;
 float r = 100;
 float theta = 0;
 
 void setup() {
   size(600, 600);
-  json = loadJSONObject ("http://api.wunderground.com/api/76196b5fe43f0d2e/conditions/q/HI/MAUI.json");//location is Hawaii - Maui
-  //json = loadJSONObject ("https://api.brewerydb.com/v2/?beers&key=a6903ac851cb86e92290fcf163d0743a&format=json"); //beer api did not work...
+  json = loadJSONObject ("http://api.wunderground.com/api/yourkey/conditions/q/HI/MAUI.json");//location is Hawaii - Maui
+  //json = loadJSONObject ("https://api.brewerydb.com/v2/?beers&key=''&format=json"); //beer api did not work...
   wind_degrees = json.getJSONObject("current_observation").getFloat("wind_degrees");//320 degrees of the wind.
   //float ibumax = json.getJSONObject("data").getFloat("ibumax");
   background(0,25);
