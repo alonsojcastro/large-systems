@@ -31,7 +31,7 @@ void setup() {
    */
    //specify the remote address that you want to talk to 
    //this specific one is the localhost ip address
-  myRemoteLocation = new NetAddress("149.31.226.244",12000);
+  myRemoteLocation = new NetAddress("149.31.226.118",12000);
 }
 
 
