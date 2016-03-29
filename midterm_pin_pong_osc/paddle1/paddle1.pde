@@ -15,7 +15,7 @@ float speedx = random(2,8);
 float speedy = random(2,8);
 
 void setup(){
-  c = new Client(this, "127.0.0.1", 1234);
+  c = new Client(this, "149.31.139.11", 12000);
   size(500, 500);
   ellipseMode(CENTER);
   noStroke();
@@ -24,7 +24,7 @@ void setup(){
 void draw(){
   background(4, 106, 58);
 
-  c = new Client(this, "127.0.0.1", 1234);
+  c = new Client(this, "149.31.139.11", 12000);
   float p1Buffy = (mouseY-50)/4,
         updatepongbally = pongballx /4,
         updatepongballx = pongbally /4;

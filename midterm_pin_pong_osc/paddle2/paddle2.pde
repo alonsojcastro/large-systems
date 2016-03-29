@@ -20,7 +20,7 @@ float player1x = 490, player1y;
 float player2x = 0, player2y;
 
 void setup() {
-   s = new Server(this, 1234); 
+   s = new Server(this, 12000); 
    size(500, 500);
    ellipseMode(CENTER);
    noStroke();
