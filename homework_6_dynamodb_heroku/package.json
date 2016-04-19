@@ -1,0 +1,15 @@
+{
+  "name": "bankhw",
+  "version": "1.0.0",
+  "description": "",
+  "main": "bankhw.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "",
+  "license": "ISC",
+  "dependencies": {
+    "dynamodb": "^0.3.6",
+    "express": "^4.13.4"
+  }
+}
