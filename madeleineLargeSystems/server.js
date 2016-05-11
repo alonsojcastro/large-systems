@@ -13,7 +13,7 @@ var fs = require('fs');
 //     button = new GPIO(4, 'in', 'both');
 
 var server = http.createServer(handleRequest);
-server.listen(4000);
+server.listen(process.env.PORT || 4000);
 
 console.log('Server started on port 4000');
 
@@ -64,8 +64,8 @@ function handleRequest(req, res) {
 var ddb = require ('dynamodb')
   .ddb({
 
-    accessKeyId: 'AKIAIEDL5YAJYYOLIEEQ',
-    secretAccessKey: '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',
+    accessKeyId: '',
+    secretAccessKey: '',
     endpoint: "dynamodb.us-west-2.amazonaws.com"
     });
 
